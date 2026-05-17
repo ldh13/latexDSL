@@ -20,3 +20,7 @@ add_executable(renderer_tests
 tests/renderer_tests.cpp
 )
 
+add_executable(repl
+tools/repl/main.cpp
+)
+
