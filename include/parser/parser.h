@@ -19,15 +19,12 @@ class Parser {
         size_t currentIndex;
 
         // # Const Helper functions (Do not change attributes of the Parser object) #
+		// BUG: Should use .at()???
         const Token& peek() const {
             return tokens[currentIndex];
         }
         bool match(TokenType type) const {
-            if (peek().type == type) {
-                return true;
-            }
-
-            return false;
+            return peek().type == type;
         }
 		// # Non-Const Helper Functions #
 		void advance() {

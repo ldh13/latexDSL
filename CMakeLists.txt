@@ -16,3 +16,7 @@ tests/parser_tests.cpp
 src/utils/ast_utils.cpp
 )
 
+add_executable(renderer_tests
+tests/renderer_tests.cpp
+)
+
